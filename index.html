@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header-and-button">
+			<div class="waviy">
+				<span style="--i:1">T</span>
+				<span style="--i:2">i</span>
+				<span style="--i:3">c</span>
+				<span style="--i:4">-</span>
+				<span style="--i:5">T</span>
+				<span style="--i:6">a</span>
+				<span style="--i:7">c</span>
+				<span style="--i:8">-</span>
+				<span style="--i:9">T</span>
+				<span style="--i:10">o</span>
+				<span style="--i:11">e</span>
+			</div>
+				<button 
+				class="replay-btn"
+				onclick="resetGame()">
+				Replay
+				</button>
+		</div>
+		<div id="game-board">
+		</div> 
+		<div class="results-block">
+					<div id="results">
+						<h2>Results:</h2>
+						<p id="conclusion"></p>
+						<ul id="results-list"></ul>
+							<button 
+							class="clear-results-button"
+							onclick="clearResults()">
+							Clear Results
+							</button>
+					</div>
+		</div>
+	</div>
+    <script src="./script.js"></script>
+</body>
+</html>

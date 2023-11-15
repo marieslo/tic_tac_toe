@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Zilla+Slab:wght@300&display=swap');
+
+:root{
+  background-image: url(./chalkboard.jpg);
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  color: rgba(245, 245, 245, 0.929);
+}
+
+.container{
+  display: grid;
+  margin: 50px 20rem 0 100px;
+  width: fit-content;
+  height: 50%;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: rgba(245, 245, 245, 0.929);
+  font-size: 30px;
+  animation: waviy 1s ;
+  animation-delay: calc(.1s * var(--i));
+  text-shadow: 1px 1px;
+
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.header-and-button{
+margin-bottom: 40px;
+}
+
+button {
+  font-family: 'Permanent Marker', cursive;
+  color: rgba(245, 245, 245, 0.929);
+  font-size: 12px;
+  background-color: transparent;
+  border: dotted;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(83, 3, 3, 0.25);
+  }
+
+.replay-btn{
+  margin: 20px 0 0 260px;
+  position: absolute;
+}
+
+.clear-results-btn{
+  position: absolute;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 4em;
+  cursor: pointer;
+  border-style: groove none none groove;
+  border-radius: 5px;
+}
+.results-block{
+  margin-left: 500px;
+  margin-top: -372px;
+}
+
+h2{
+  text-decoration: underline;
+}
+#results {
+  font-size: 14px;
+}
+
+#results-list{
+  font-size: 12px;
+}
